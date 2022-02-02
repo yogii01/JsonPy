@@ -2,7 +2,7 @@ import json
 import zipfile
 import os
 
-with open('main.json','r') as filesdata:
+with open('Demo1.json','r') as filesdata:
     filedata=json.load(filesdata)
     
 files = filter( lambda x: os.path.isfile(os.path.join(filedata['path'], x)),
