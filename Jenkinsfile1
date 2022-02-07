@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Slave1' }
+    agent { label 'Slave' }
     
     stages {
         stage('Python') {
