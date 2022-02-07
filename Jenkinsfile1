@@ -1,0 +1,11 @@
+pipeline {
+    agent { label 'Slave1' }
+    
+    stages {
+        stage('Python') {
+            steps {
+                bat "Demo.py"
+            }
+        }
+    }
+}
