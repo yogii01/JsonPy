@@ -35,10 +35,7 @@ pipeline {
                               "target": "logic-ops-lab-libs-snapshot-local"
                             }
                          ]      
-                    }''',
-                    buildName: 'holyFrog',
-                    buildNumber: '42',
-                    project: 'my-project-key'
+                    }'''
                 )
             }
         }
