@@ -36,6 +36,9 @@ pipeline {
                             }
                          ]      
                     }''',
+                    buildName: 'holyFrog',
+                    buildNumber: '42',
+                    project: 'my-project-key'
                 )
             }
         }
@@ -48,3 +51,5 @@ pipeline {
         }
     }
 }       
+
+        
