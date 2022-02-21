@@ -26,17 +26,17 @@ pipeline {
         }
         stage ('Upload'){
             steps{
-                rtUplode (
-                 serverId:"Artifactory",
-                  spec: '''{
-                   "files": [
-                      {
-                      "pattern": ".zip",
-                      "target": "logic-ops-lab-libs-snapshot-local"
-                      }
-                            ]
-                           }''',
-                        )
+                rtUpload (
+                    serverId: 'Artifactory',
+                    spec: '''{
+                          "files": [
+                            {
+                              "pattern": ".zip",
+                              "target": "logic-ops-lab-libs-snapshot-local"
+                            }
+                         ]      
+                    }''',
+                )
             }
         }
         stage ('Publish build info') {
