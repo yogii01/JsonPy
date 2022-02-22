@@ -32,7 +32,7 @@ pipeline {
                           "files": [
                             {
                               "pattern": "G:\\py\\*.zip",
-                              "target": "logic-ops-lab-libs-snapshot-local"
+                              "target": "Zip_file"
                             }
                          ]      
                     }'''
