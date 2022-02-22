@@ -1,8 +1,5 @@
 pipeline {
     agent any
-        tools {
-            maven "3.8.4"
-                }
         stages {
             
         stage ('Python') {
@@ -32,7 +29,7 @@ pipeline {
                           "files": [
                             {
                               "pattern": "G:\\py\\*.zip",
-                              "target": "Zip_file"
+                              "target": "Demo_file"
                             }
                          ]      
                     }'''
